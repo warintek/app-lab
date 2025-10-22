@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP | Table</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url('assets/imgs/bg-img.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;                
+        }
+
+        .content {
+            width: 900px;
+            padding: 20px;
+            margin: auto;
+            margin-top: 50px;
+            border: 1px solid gray;
+            border-radius: 10px;
+            background-color: azure;
+        }
+
+        table {
+            width: 100%;
+            border: 1px solid gray;
+            border-collapse: collapse;
+            border-radius: 5px;
+        }
+
+        caption {
+            font-size: 16pt;
+            font-weight: bold;
+            padding: 30px 0;
+            color: green;
+        }
+
+        th {
+            padding: 10px 0;
+            border-bottom: double gray;
+        }
+
+        td {
+            padding: 8px 5px;
+        }
+
+        tr { border-bottom: 1px solid gray; }
+
+        tr:last-child td { border-bottom: none;}
+
+        tr:nth-child(even) {
+            background-color: rgba(150, 212, 212, 0.4);
+        }
+
+        th:nth-child(even),td:nth-child(even) {
+            background-color: rgba(150, 212, 212, 0.4);
+        }
+
+        tbody tr:hover { 
+            background-color: rgba(150, 212, 212, 0.2);
+            cursor: pointer;
+        }
+
+        .rm {
+            text-align: end;
+        }
+
+        .no {
+            text-align: center;
+        }
+                    
+    </style>
+</head>
+<body>
+    <div class="content">
+        <table>
+            <caption class="tb-header">DATA PEMILIH 2025</caption>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Kabupaten/Kota</th>
+                    <th>Pemilih</th>
+                    <th>TPS</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="no">01.</td>
+                    <td>Kota Tanjung Balai</td>
+                    <td class="rm">25.000</td>
+                    <td class="rm">930 TPS</td>                   
+                    <td class="no"><button class="btn-sm" type="button">Detail</button></td>
+                </tr>
+                <tr>
+                    <td class="no">02.</td>
+                    <td>Kab. Asahan</td>
+                    <td class="rm">125.000</td>
+                    <td class="rm">3.930 TPS</td>
+                    <td class="no"><button class="btn-sm" type="button">Detail</button></td>
+                </tr>
+                <tr>
+                    <td class="no">03.</td>
+                    <td>Kab. Labuhan Batu Utara</td>
+                    <td class="rm">75.000</td>
+                    <td class="rm">1.930 TPS</td>
+                    <td class="no"><button class="btn-sm" type="button">Detail</button></td>
+                </tr>
+                <tr>
+                    <td class="no">04.</td>
+                    <td>Kab. Labuhan Batu Selatan</td>
+                    <td class="rm">50.000</td>
+                    <td class="rm">1.430 TPS</td>
+                    <td class="no"><button class="btn-sm" type="button">Detail</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
